@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nimo</string>
+
+    <!-- Menu -->
+    <string name="menu_title">NIMO</string>
+    <string name="menu_subtitle">Pegue os Produtos Certos</string>
+    <string name="btn_play">JOGAR</string>
+    <string name="btn_how_to_play">COMO JOGAR</string>
+    <string name="btn_settings">CONFIGURAÇÕES</string>
+
+    <!-- Configurações -->
+    <string name="settings_title">CONFIGURAÇÕES</string>
+    <string name="settings_difficulty">Dificuldade</string>
+    <string name="mode_easy">FÁCIL</string>
+    <string name="mode_easy_desc">Produtos mais lentos e menos itens errados. Ótimo para aprender.</string>
+    <string name="mode_normal">MÉDIO</string>
+    <string name="mode_normal_desc">O equilíbrio clássico do jogo.</string>
+    <string name="mode_hard">DIFÍCIL</string>
+    <string name="mode_hard_desc">Partida mais longa, produtos muito rápidos e cheio de itens errados.</string>
+    <string name="btn_ok">OK</string>
+    <string name="cd_mode_selected">%1$s, selecionado</string>
+
+    <!-- Botões -->
+    <string name="btn_start">COMEÇAR</string>
+    <string name="btn_continue">CONTINUAR</string>
+    <string name="btn_restart">REINICIAR</string>
+    <string name="btn_menu">MENU</string>
+    <string name="btn_main_menu">MENU PRINCIPAL</string>
+    <string name="btn_play_again">JOGAR NOVAMENTE</string>
+    <string name="btn_try_again">TENTAR NOVAMENTE</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title">COMO JOGAR</string>
+    <string name="tutorial_tilt">Incline o celular para a esquerda e para a direita para movimentar o Nimo.</string>
+    <string name="tutorial_no_sensor">Seu aparelho não tem acelerômetro: toque e arraste o dedo na tela para mover o Nimo.</string>
+    <string name="tutorial_correct_title">PRODUTOS CORRETOS</string>
+    <string name="tutorial_correct_desc">Pegue os produtos certos antes que eles caiam no chão.</string>
+    <string name="tutorial_wrong_title">PRODUTOS ERRADOS</string>
+    <string name="tutorial_wrong_desc">Não pegue os produtos errados!</string>
+    <string name="tutorial_floor_rule">Se um produto certo cair no chão, você também perde uma vida.</string>
+    <string name="tutorial_errors_rule">Com 3 X vermelhos a partida termina. Chegue a 100 pontos para vencer!</string>
+    <string name="item_points">+%1$d pontos</string>
+    <string name="item_avoid">Evite!</string>
+
+    <!-- Itens -->
+    <string name="item_bottle">Garrafa</string>
+    <string name="item_can">Lata</string>
+    <string name="item_phone">Celular</string>
+    <string name="item_steak">Bife</string>
+    <string name="item_banana">Casca de banana</string>
+
+    <!-- HUD -->
+    <string name="hud_score">Pontos: %1$d / %2$d</string>
+    <string name="hud_collected">Coletados: %1$d</string>
+    <string name="hud_errors">Erros: %1$d / %2$d</string>
+    <string name="hud_level">Nível: %1$s</string>
+    <string name="level_easy">Fácil</string>
+    <string name="level_medium">Médio</string>
+    <string name="level_hard">Difícil</string>
+    <string name="level_up">Nível %1$s!</string>
+    <string name="countdown_go">VAI!</string>
+    <string name="hint_tilt">Incline o celular!</string>
+    <string name="hint_touch">Toque e arraste para mover!</string>
+    <string name="float_wrong">Errado!</string>
+    <string name="float_missed">Caiu!</string>
+
+    <!-- Telas de estado -->
+    <string name="paused_title">PAUSADO</string>
+    <string name="game_over_title">FIM DE JOGO</string>
+    <string name="victory_title">VOCÊ GANHOU! 🎉</string>
+    <string name="result_score">Pontuação: %1$d</string>
+    <string name="result_collected">Produtos coletados: %1$d</string>
+    <string name="result_errors">Erros: %1$d/%2$d</string>
+
+    <!-- Acessibilidade -->
+    <string name="cd_pause">Pausar o jogo</string>
+    <string name="cd_nimo">Nimo, o guaxinim rosa</string>
+    <string name="cd_correct">Produto correto</string>
+    <string name="cd_wrong">Produto errado</string>
+</resources>

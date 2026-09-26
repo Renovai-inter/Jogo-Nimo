@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky">
+
+    <com.nimo.game.ui.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/btn_pause"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_pause_button"
+        android:contentDescription="@string/cd_pause"
+        android:scaleType="center"
+        android:src="@drawable/ic_pause" />
+
+    <!-- Tela de pausa -->
+    <FrameLayout
+        android:id="@+id/overlay_pause"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_dim"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/pause_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/paused_title"
+                android:textColor="@color/pink"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btn_continue"
+                style="@style/NimoButton.Green"
+                android:layout_width="240dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/btn_continue" />
+
+            <Button
+                android:id="@+id/btn_restart"
+                style="@style/NimoButton.Orange"
+                android:layout_width="240dp"
+                android:text="@string/btn_restart" />
+
+            <Button
+                android:id="@+id/btn_pause_menu"
+                style="@style/NimoButton.White"
+                android:layout_width="240dp"
+                android:text="@string/btn_menu" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Tela de fim de jogo / vitória -->
+    <FrameLayout
+        android:id="@+id/overlay_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_dim"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/end_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/end_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textColor="@color/pink"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/end_score"
+                style="@style/ResultText"
+                android:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/end_collected"
+                style="@style/ResultText" />
+
+            <TextView
+                android:id="@+id/end_errors"
+                style="@style/ResultText"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/btn_end_primary"
+                style="@style/NimoButton.Green"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/btn_end_menu"
+                style="@style/NimoButton.White"
+                android:text="@string/btn_main_menu" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

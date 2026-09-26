@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="sky">#FF4FA8F0</color>
+    <color name="sky_light">#FFBFE7FF</color>
+    <color name="pink">#FFE0407F</color>
+    <color name="pink_dark">#FF8E1B4E</color>
+    <color name="pink_light">#FFFF7EB6</color>
+    <color name="nimo_wine">#FF861A45</color>
+    <color name="green">#FF43B649</color>
+    <color name="green_dark">#FF2A7B2F</color>
+    <color name="green_light">#FF7BDB6A</color>
+    <color name="orange">#FFFF9F1C</color>
+    <color name="orange_dark">#FFB86200</color>
+    <color name="orange_light">#FFFFC25C</color>
+    <color name="red">#FFE53935</color>
+    <color name="red_light">#FFFFEBEE</color>
+    <color name="green_bg">#FFE8F5E9</color>
+    <color name="cream">#FFFFFBF2</color>
+    <color name="gray_border">#FFD6CFC7</color>
+    <color name="text_dark">#FF33264A</color>
+    <color name="text_medium">#FF5B4B6E</color>
+    <color name="overlay_dim">#99000000</color>
+    <color name="card_bg">#F7FFFFFF</color>
+</resources>

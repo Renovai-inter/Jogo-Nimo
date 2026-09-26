@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.nimo.game.ui.SceneView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/menu_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.nimo.game.ui.TitleView
+                android:id="@+id/menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/menu_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_subtitle"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="18dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="8dp"
+                android:text="@string/menu_subtitle"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/menu_nimo"
+                android:layout_width="200dp"
+                android:layout_height="262dp"
+                android:layout_marginTop="18dp"
+                android:contentDescription="@string/cd_nimo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nimo" />
+
+            <Button
+                android:id="@+id/btn_play"
+                style="@style/NimoButton.Green"
+                android:layout_marginTop="22dp"
+                android:text="@string/btn_play" />
+
+            <Button
+                android:id="@+id/btn_how_to_play"
+                style="@style/NimoButton.White"
+                android:text="@string/btn_how_to_play" />
+
+            <Button
+                android:id="@+id/btn_settings"
+                style="@style/NimoButton.White"
+                android:text="@string/btn_settings" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Configurações -->
+    <FrameLayout
+        android:id="@+id/overlay_settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_dim"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/settings_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_card"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/settings_title"
+                        android:textColor="@color/pink"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/settings_difficulty"
+                        android:textColor="@color/text_dark"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/settings_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <Button
+                        android:id="@+id/btn_settings_ok"
+                        style="@style/NimoButton.Green"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/btn_ok" />
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+</FrameLayout>
