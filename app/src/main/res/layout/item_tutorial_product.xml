@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <FrameLayout
+        android:id="@+id/product_slot"
+        android:layout_width="78dp"
+        android:layout_height="78dp">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/product_badge"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="top|end"
+            android:importantForAccessibility="no" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:maxWidth="104dp"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/product_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textSize="13sp" />
+</LinearLayout>
